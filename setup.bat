@@ -17,13 +17,6 @@ adb shell settings put secure spell_checker_enabled 0
 adb shell settings put secure long_press_timeout 350
 adb shell settings put secure icon_blacklist mobile,rotate,nfc,headset
 
-:: Fluid NG
-adb shell settings put secure accessibility_enabled 1
-adb shell settings put secure enabled_accessibility_services com.fb.fluid/com.fb.fluid.MainAccessibilityService
-
-:: Notify & Fitness for Mi Band notification listener
-adb shell settings put secure enabled_notification_listeners com.mc.miband1/com.mc.miband1.NotificationService50
-
 :: Disable default print service
 adb shell settings put secure disabled_print_services com.android.bips/.BuiltInPrintService
 
@@ -47,18 +40,6 @@ adb shell pm revoke --user 0 com.android.vending android.permission.RECEIVE_SMS
 adb shell pm revoke --user 0 com.android.vending android.permission.READ_SMS
 adb shell pm revoke --user 0 com.android.vending android.permission.READ_CONTACTS
 
-:: Clear Card Emulator app's data
-::adb shell pm clear --user 0 com.yuanwofei.cardemulator.pro
-::adb shell pm grant --user 0 com.yuanwofei.cardemulator.pro android.permission.WRITE_EXTERNAL_STORAGE
-::adb shell pm grant --user 0 com.yuanwofei.cardemulator.pro android.permission.READ_EXTERNAL_STORAGE
-
 :: Grant Storage permissions to Magisk Manager
 adb shell pm grant --user 0 com.topjohnwu.magisk android.permission.WRITE_EXTERNAL_STORAGE
 adb shell pm grant --user 0 com.topjohnwu.magisk android.permission.READ_EXTERNAL_STORAGE
-
-:: Add a few apps to the Doze whitelist
-adb shell dumpsys deviceidle whitelist +com.topjohnwu.magisk
-adb shell dumpsys deviceidle whitelist +com.arlosoft.macrodroid
-adb shell dumpsys deviceidle whitelist +com.mc.miband1
-adb shell dumpsys deviceidle whitelist +com.android.deskclock
-adb shell dumpsys deviceidle whitelist +com.google.android.GoogleCamera
