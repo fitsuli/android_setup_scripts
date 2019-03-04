@@ -16,10 +16,6 @@ adb shell settings put secure adb_notify 0
 adb shell settings put secure spell_checker_enabled 0
 adb shell settings put secure long_press_timeout 350
 adb shell settings put secure icon_blacklist mobile,rotate,nfc,headset
-:: adb shell settings put secure icon_blacklist mobile,rotate,nfc,headset
-
-:: Just looks cooler that way
-:: adb shell settings put secure bluetooth_name "Xiaomi Mi5S"
 
 :: Fluid NG
 adb shell settings put secure accessibility_enabled 1
