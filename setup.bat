@@ -13,7 +13,13 @@ adb shell settings put global wifi_scan_always_enabled 0
 adb shell settings put global charging_sounds_enabled 0
 adb shell settings put global wifi_on 1
 adb shell settings put secure adb_notify 0
-adb shell 
+adb shell settings put secure spell_checker_enabled 0
+
+# Fluid NG
+adb shell settings put secure enabled_accessibility_services com.fb.fluid/com.fb.fluid.MainAccessibilityService
+
+# Notify & Fitness for Mi Band notification listener
+adb settings settings put secure enabled_notification_listeners com.mc.miband1/com.mc.miband1.NotificationService50
 
 adb shell pm disable-user --user 0 com.google.android.setupwizard
 adb shell pm disable-user --user 0 com.google.android.apps.restore
@@ -23,22 +29,28 @@ adb shell pm disable-user --user 0 com.android.calculator2
 adb shell pm disable-user --user 0 com.android.stk
 adb shell pm disable-user --user 0 org.lineageos.jelly
 adb shell pm disable-user --user 0 org.lineageos.snap
+
+# Device Health Services and Digital Wellbeing
 adb shell pm disable-user --user 0 com.google.android.apps.turbo
 adb shell pm disable-user --user 0 com.google.android.apps.wellbeing
 
+# Revoke most Google Play permissions
 adb shell pm revoke --user 0 com.android.vending android.permission.ACCESS_COARSE_LOCATION
 adb shell pm revoke --user 0 com.android.vending android.permission.SEND_SMS
 adb shell pm revoke --user 0 com.android.vending android.permission.RECEIVE_SMS
 adb shell pm revoke --user 0 com.android.vending android.permission.READ_SMS
 adb shell pm revoke --user 0 com.android.vending android.permission.READ_CONTACTS
 
+# Clear Card Emulator app's data
 #adb shell pm clear --user 0 com.yuanwofei.cardemulator.pro
 #adb shell pm grant --user 0 com.yuanwofei.cardemulator.pro android.permission.WRITE_EXTERNAL_STORAGE
 #adb shell pm grant --user 0 com.yuanwofei.cardemulator.pro android.permission.READ_EXTERNAL_STORAGE
 
+# Grant Storage permissions to Magisk Manager
 adb shell pm grant --user 0 com.topjohnwu.magisk android.permission.WRITE_EXTERNAL_STORAGE
 adb shell pm grant --user 0 com.topjohnwu.magisk android.permission.READ_EXTERNAL_STORAGE
 
+# Add a few apps to the Doze whitelist
 adb shell dumpsys deviceidle whitelist +com.topjohnwu.magisk
 adb shell dumpsys deviceidle whitelist +com.arlosoft.macrodroid
 adb shell dumpsys deviceidle whitelist +com.mc.miband1
