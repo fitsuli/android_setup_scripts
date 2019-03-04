@@ -14,12 +14,23 @@ adb shell settings put global charging_sounds_enabled 0
 adb shell settings put global wifi_on 1
 adb shell settings put secure adb_notify 0
 adb shell settings put secure spell_checker_enabled 0
+# adb shell settings put secure selected_spell_checker ""
+adb shell settings put secure long_press_timeout 350
+adb shell settings put secure icon_blacklist mobile,rotate,nfc,headset
+adb shell settings put secure icon_blacklist mobile,rotate,nfc,headset
+
+# Just looks cooler that way
+# adb shell settings put secure bluetooth_name "Xiaomi Mi5S"
 
 # Fluid NG
+adb shell settings put secure accessibility_enabled 1
 adb shell settings put secure enabled_accessibility_services com.fb.fluid/com.fb.fluid.MainAccessibilityService
 
 # Notify & Fitness for Mi Band notification listener
 adb settings settings put secure enabled_notification_listeners com.mc.miband1/com.mc.miband1.NotificationService50
+
+# Disable default print service
+adb shell settings put secure disabled_print_services com.android.bips/.BuiltInPrintService
 
 adb shell pm disable-user --user 0 com.google.android.setupwizard
 adb shell pm disable-user --user 0 com.google.android.apps.restore
