@@ -28,6 +28,7 @@ adb shell pm disable-user --user 0 com.android.calculator2
 adb shell pm disable-user --user 0 com.android.stk
 adb shell pm disable-user --user 0 org.lineageos.jelly
 adb shell pm disable-user --user 0 org.lineageos.snap
+adb shell pm disable-user --user 0 org.lineageos.eleven
 
 :: Device Health Services and Digital Wellbeing
 adb shell pm disable-user --user 0 com.google.android.apps.turbo
