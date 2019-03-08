@@ -18,3 +18,5 @@ adb shell dumpsys deviceidle whitelist +com.mc.miband1
 adb shell dumpsys deviceidle whitelist +com.android.deskclock
 adb shell dumpsys deviceidle whitelist +com.google.android.GoogleCamera
 adb shell dumpsys deviceidle whitelist +at.bitfire.davdroid
+
+echo Done

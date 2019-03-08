@@ -44,3 +44,5 @@ adb shell pm revoke --user 0 com.android.vending android.permission.READ_CONTACT
 :: Grant Storage permissions to Magisk Manager
 adb shell pm grant --user 0 com.topjohnwu.magisk android.permission.WRITE_EXTERNAL_STORAGE
 adb shell pm grant --user 0 com.topjohnwu.magisk android.permission.READ_EXTERNAL_STORAGE
+
+echo Done

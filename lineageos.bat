@@ -16,3 +16,5 @@ adb shell su -c settings put --lineage secure advanced_reboot 1
 adb shell su -c settings put --lineage system battery_light_brightness_level 1
 adb shell su -c settings put --lineage system battery_light_brightness_level_zen 1
 adb shell su -c settings put --lineage secure button_brightness 0
+
+echo Done
