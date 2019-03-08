@@ -6,6 +6,10 @@ adb shell settings put secure enabled_accessibility_services com.fb.fluid/com.fb
 :: Notify & Fitness for Mi Band notification listener
 adb shell settings put secure enabled_notification_listeners com.mc.miband1/com.mc.miband1.NotificationService50
 
+:: GBoard mod as a default and the only one input method
+:: YOU MIGHT WANT TO DISABLE IT
+adb shell settings put enabled_input_methods srow.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME
+
 :: Clear Card Emulator app's data
 adb shell pm clear --user 0 com.yuanwofei.cardemulator.pro
 adb shell pm grant --user 0 com.yuanwofei.cardemulator.pro android.permission.WRITE_EXTERNAL_STORAGE
