@@ -10,6 +10,7 @@ adb shell settings put secure user_full_data_backup_aware 1
 adb shell settings put secure sysui_qs_tiles wifi,cell,airplane,rotation,flashlight,bt,location,caffeine,screenrecord
 adb shell settings put global development_settings_enabled 1
 adb shell settings put global wifi_scan_always_enabled 1
+adb shell settings put global ble_scan_always_enabled 1
 adb shell settings put global charging_sounds_enabled 0
 adb shell settings put global wifi_on 1
 adb shell settings put secure adb_notify 0
