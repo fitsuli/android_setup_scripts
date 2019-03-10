@@ -18,6 +18,7 @@ adb shell settings put secure spell_checker_enabled 0
 adb shell settings put secure long_press_timeout 350
 
 adb shell settings put global airplane_mode_radios cell,nfc
+adb shell settings put global airplane_mode_toggleable_radios wifi,bluetooth
 adb shell settings put secure sysui_qs_tiles wifi,cell,airplane,rotation,flashlight,bt,location,caffeine,screenrecord
 adb shell settings put secure icon_blacklist mobile,rotate,nfc,headset
 
