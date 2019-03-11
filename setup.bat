@@ -33,6 +33,8 @@ adb shell pm disable-user --user 0 com.android.stk
 adb shell pm disable-user --user 0 org.lineageos.jelly
 adb shell pm disable-user --user 0 org.lineageos.snap
 adb shell pm disable-user --user 0 org.lineageos.eleven
+adb shell pm disable-user --user 0 org.revenge.gramophone
+adb shell pm disable-user --user 0 mark.via.gp
 
 :: Device Health Services and Digital Wellbeing
 adb shell pm disable-user --user 0 com.google.android.apps.turbo
