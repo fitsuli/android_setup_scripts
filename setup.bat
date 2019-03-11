@@ -36,9 +36,10 @@ adb shell pm disable-user --user 0 org.lineageos.eleven
 adb shell pm disable-user --user 0 org.revenge.gramophone
 adb shell pm disable-user --user 0 mark.via.gp
 
-:: Device Health Services and Digital Wellbeing
+:: Device Health Services, Digital Wellbeing and Actions Services
 adb shell pm disable-user --user 0 com.google.android.apps.turbo
 adb shell pm disable-user --user 0 com.google.android.apps.wellbeing
+adb shell pm disable-user --user 0 com.google.android.as
 
 :: Revoke most Google Play permissions
 adb shell pm revoke --user 0 com.android.vending android.permission.ACCESS_COARSE_LOCATION
