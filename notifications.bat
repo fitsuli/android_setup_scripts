@@ -6,6 +6,7 @@ adb shell su -c sed -i '/Titanium/{s/importance="3/importance="1/}' /data/system
 :: Notify & Fitness for Mi Band service -> lowest priority
 :: Probably would interfere with something, but works okay on my device
 adb shell su -c sed -i '/Service/{s/importance="3/importance="1/}' /data/system/notification_policy.xml
+adb shell su -c sed -i '/Service/{s/importance="2/importance="1/}' /data/system/notification_policy.xml
 
 :: Disable Brave/Chrome Sites notifications
 adb shell su -c sed -i '/Sites/{s/blocked="false/blocked="true/}' /data/system/notification_policy.xml
@@ -21,7 +22,7 @@ adb shell su -c sed -i '/DEVELOPER/{s/importance="2/importance="1/}' /data/syste
 
 :: Disable MacroDroid's persistent notification
 adb shell su -c sed -i '/persistent_notification/{s/importance="2/importance="0/}' /data/system/notification_policy.xml
-
+adb shell su -c sed -i '/persistent_notification/{s/importance="3/importance="0/}' /data/system/notification_policy.xml
 
 :: Reboot IMMEDIATELY in order to save all of the changes
 adb reboot
