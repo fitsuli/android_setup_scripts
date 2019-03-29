@@ -10,7 +10,6 @@ adb shell settings put global ble_scan_always_enabled 1
 
 adb shell settings put secure double_tap_to_wake 0
 adb shell settings put secure screensaver_enabled 0
-adb shell settings put secure tts_default_synth com.google.android.tts
 adb shell settings put global development_settings_enabled 1
 adb shell settings put global charging_sounds_enabled 0
 adb shell settings put secure adb_notify 0
@@ -30,11 +29,14 @@ adb shell pm disable-user --user 0 com.google.android.apps.restore
 adb shell pm disable-user --user 0 com.android.gallery3d
 adb shell pm disable-user --user 0 com.android.email
 adb shell pm disable-user --user 0 com.android.calculator2
+adb shell pm disable-user --user 0 com.android.camera2
 adb shell pm disable-user --user 0 com.android.stk
+adb shell pm disable-user --user 0 com.android.music.debug
 adb shell pm disable-user --user 0 org.lineageos.jelly
 adb shell pm disable-user --user 0 org.lineageos.snap
 adb shell pm disable-user --user 0 org.lineageos.eleven
 adb shell pm disable-user --user 0 org.revenge.gramophone
+adb shell pm disable-user --user 0 code.name.monkey.retromusic
 adb shell pm disable-user --user 0 mark.via.gp
 
 :: Device Health Services, Digital Wellbeing and Actions Services

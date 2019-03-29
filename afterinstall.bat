@@ -6,6 +6,8 @@ adb shell settings put secure enabled_accessibility_services com.fb.fluid/com.fb
 :: Notify & Fitness for Mi Band notification listener
 adb shell settings put secure enabled_notification_listeners com.mc.miband1/com.mc.miband1.NotificationService50
 
+adb shell settings put secure tts_default_synth com.google.android.tts
+
 :: Disable AOSP keyboard
 adb shell ime disable com.android.inputmethod.latin/.LatinIME
 
