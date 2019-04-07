@@ -36,6 +36,7 @@ adb shell pm disable-user --user 0 org.lineageos.jelly
 adb shell pm disable-user --user 0 org.lineageos.snap
 adb shell pm disable-user --user 0 org.lineageos.eleven
 adb shell pm disable-user --user 0 org.revenge.gramophone
+adb shell pm disable-user --user 0 com.revenge.gramophone
 adb shell pm disable-user --user 0 code.name.monkey.retromusic
 adb shell pm disable-user --user 0 mark.via.gp
 
