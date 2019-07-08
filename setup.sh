@@ -42,7 +42,7 @@ adb shell settings put system time_12_24 24
 
 adb shell settings put global airplane_mode_radios cell,nfc
 adb shell settings put global airplane_mode_toggleable_radios wifi,bluetooth
-adb shell settings put secure sysui_qs_tiles wifi,cell,airplane,rotation,flashlight,bt,location,caffeine,screenrecord
+adb shell settings put secure sysui_qs_tiles wifi,cell,airplane,rotation,flashlight,bt,dnd,caffeine,screenrecord
 adb shell settings put secure icon_blacklist mobile,rotate,nfc,headset
 
 # Disable default print service
