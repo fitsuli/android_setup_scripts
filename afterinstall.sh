@@ -43,6 +43,9 @@ adb shell pm disable-user --user 0 com.android.deskclock
 adb shell pm disable-user --user 0 com.android.messaging
 # adb shell pm disable-user --user 0 com.android.dialer
 
+# Disable LineageOS' AudioFX
+adb shell pm disable-user --user 0 org.lineageos.audiofx
+
 adb shell settings put secure sms_default_application "com.textra"
 # adb shell settings put secure dialer_default_application "com.google.android.dialer"
 
