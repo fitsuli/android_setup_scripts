@@ -36,6 +36,10 @@ $AS settings put system screenshot_shutter_sound 0
 $AS settings put system lockscreen_sounds_enabled 0
 $AS settings put system haptic_feedback_enabled 1
 
+$AS settings put secure night_display_auto_mode 1
+$AS settings put secure night_display_color_temperature 1600
+$AS settings put secure night_display_custom_start_time 79200000
+
 $AS settings put global auto_time_zone 0
 $AS settings put system time_12_24 24
 
