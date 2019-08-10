@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/sh
 
 # Clock app
 # Snooze duration, gradually increasing volume and some other settings
