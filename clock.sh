@@ -1,6 +1,6 @@
 #!/bin/sh
 
-AS=adb shell
+AS="adb shell"
 # Snooze duration, gradually increasing volume and some other settings
 $AS su --preserve-environment -c "sed -i '/snooze_duration/{s/10/7/}' /data/user_de/0/com.android.deskclock/shared_prefs/com.android.deskclock_preferences.xml" 
 

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-AS=adb shell
+AS="adb shell"
 
 # Not sure about these two, but might be okay
 $AS settings put global package_verifier_enable 0

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-AS=adb shell
+AS="adb shell"
 
 # Fluid NG
 # $AS settings put secure accessibility_enabled 1

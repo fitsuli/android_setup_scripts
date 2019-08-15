@@ -1,6 +1,6 @@
 #!/bin/sh
 
-AS=adb shell
+AS="adb shell"
 
 $AS su --preserve-environment -c "settings put --lineage system enable_people_lookup 0"
 $AS su --preserve-environment -c "settings put --lineage system enable_forward_lookup 0"

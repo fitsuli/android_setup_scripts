@@ -1,6 +1,6 @@
 #!/bin/sh
 
-AS=adb shell
+AS="adb shell"
 # HUGE shoutout to FeraVolt/FeraLab for sed stuff
 # Titanium Backup -> lowest priority
 $AS su -c sed -i '/Titanium/{s/importance="3/importance="1/}' /data/system/notification_policy.xml
