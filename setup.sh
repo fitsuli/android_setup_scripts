@@ -68,7 +68,7 @@ $AS pm disable-user --user 0 com.crdroid.music
 $AS pm disable-user --user 0 org.lineageos.jelly
 $AS pm disable-user --user 0 org.lineageos.snap
 $AS pm disable-user --user 0 org.lineageos.eleven
-# $AS pm disable-user --user 0 org.lineageos.audiofx
+$AS pm disable-user --user 0 org.cyanogenmod.eleven
 $AS pm disable-user --user 0 org.revenge.gramophone
 $AS pm disable-user --user 0 com.revenge.gramophone
 $AS pm disable-user --user 0 org.omnirom.gramophone
