@@ -16,6 +16,7 @@ $AS dumpsys deviceidle whitelist +com.android.deskclock
 $AS dumpsys deviceidle whitelist +com.google.android.deskclock
 $AS dumpsys deviceidle whitelist +com.google.android.GoogleCamera
 $AS dumpsys deviceidle whitelist +at.bitfire.davdroid
+$AS dumpsys deviceidle whitelist +at.bitfire.icsdroid
 $AS dumpsys deviceidle whitelist +com.urbandroid.sleep
 
 # Revoke most of the Google Play permissions
