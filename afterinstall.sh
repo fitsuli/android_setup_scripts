@@ -31,7 +31,7 @@ $AS pm grant --user 0 com.topjohnwu.magisk android.permission.READ_EXTERNAL_STOR
 
 # Disable some additional apps that I usually replace by third-party ones
 $AS pm disable-user --user 0 com.android.deskclock
-$AS pm disable-user --user 0 com.android.messaging
+# $AS pm disable-user --user 0 com.android.messaging
 # $AS pm disable-user --user 0 com.android.dialer
 
 # Disable LineageOS' AudioFX
