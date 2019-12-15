@@ -14,7 +14,7 @@ $AS settings put global wifi_scan_always_enabled 1
 $AS settings put global ble_scan_always_enabled 1
 $AS settings put global assisted_gps_enabled 1
 $AS settings put global wifi_wakeup_enabled 0
-$AS settings put global volte_vt_enabled 1
+$AS settings put global volte_vt_enabled 0
 $AS settings put secure location_providers_allowed gps,network
 
 # Preferred network mode: WCDMA preferred
@@ -43,7 +43,7 @@ $AS settings put secure night_display_custom_start_time 79200000
 $AS settings put global auto_time_zone 0
 $AS settings put system time_12_24 24
 
-# This doesn't seem to work fine 
+# This doesn't seem to work fine
 # $AS "su -c setprop persist.sys.timezone Asia/Yekaterinburg"
 
 $AS settings put global airplane_mode_radios cell,nfc
@@ -65,6 +65,7 @@ $AS pm disable-user --user 0 com.android.camera2
 $AS pm disable-user --user 0 com.android.stk
 $AS pm disable-user --user 0 com.android.music.debug
 $AS pm disable-user --user 0 com.crdroid.music
+$AS pm disable-user --user 0 com.havoc.browser
 $AS pm disable-user --user 0 org.lineageos.jelly
 $AS pm disable-user --user 0 org.lineageos.snap
 $AS pm disable-user --user 0 org.lineageos.eleven
