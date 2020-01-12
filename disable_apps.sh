@@ -22,7 +22,6 @@ $AS pm disable-user --user 0 org.revenge.gramophone
 $AS pm disable-user --user 0 com.revenge.gramophone
 $AS pm disable-user --user 0 org.omnirom.gramophone
 $AS pm disable-user --user 0 code.name.monkey.retromusic
-$AS pm disable-user --user 0 mark.via.gp
 
 # Device Health Services, Digital Wellbeing and Actions Services
 $AS pm disable-user --user 0 com.google.android.apps.turbo
